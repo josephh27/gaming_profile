@@ -1,25 +1,132 @@
 html{
+    box-sizing: border-box;
+    height: 200%;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+body{  
+    margin: 0;
     height: 100%;
 }
 
-body{
+
+#first-bg{
+    height: 50%;
     margin: 0px;
+    background-image:linear-gradient(
+        rgba(80, 82, 81, 0.6), 
+        rgba(80, 82, 81, 0.4) 
+      ),url(katarina.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 5s linear infinite alternate;
 }
+
+#second-bg{
+    height: 50%;
+    margin: 0px;
+    background-image:linear-gradient(
+        rgba(80, 82, 81, 0.3),
+        rgba(80, 82, 81, 0.4)
+    ),url(karina.jpg);
+    background-size: cover;
+    background-position:0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 5s linear infinite alternate;
+}
+
+
 nav{
     background: #212121;
     text-align: center;
     padding: 30px;
 }
 
+@media screen and (max-width: 1016px){
+    nav{
+        visibility: hidden;
+    }   
+}
 a {
     text-decoration: none;
     padding: 30px 40px;
     color: white;
     font-weight: 600;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 a:hover{
     background: #f2d288;
+}
+
+
+
+.wrapper{
+    position: relative;
+}
+
+
+.about{
+    margin: 2% 10%;
+    font-size: 1.3rem;
+    font-family: Poppins, sans-serif;
+    color: white
+}
+
+h1 {
+    font-family: 'Pirata One', sans-serif;
+    font-weight: 400;
+    font-size: 3.3em;
+}
+
+@keyframes animateName{
+    0% {
+        content: "Billdegarde";
+    }
+
+    50% {
+        content: "Khan";
+    }
+
+    75% {
+        content: "Skydancer";
+    }
+}
+
+span.igns::before{
+    content: "Billdegarde";
+    animation: animateName infinite 2s;
+}
+
+@keyframes animateGreet{
+    0% {
+        content: "Hi.";
+    }
+
+    50% {
+        content: "Enchante.";
+    }
+
+    75% {
+        content: "Konnichiwa.";
+    }
+}
+
+span.greet::before{
+    content: "Hi";
+    animation: animateGreet infinite 3s;
+}
+
+.description{
+    max-width: 470px;
 }
