@@ -91,13 +91,17 @@ a:hover{
     transform: rotateY(180deg);
 }
 
-img {
+.game-icon {
     margin-top: 1.5rem;
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 10px inset rgb(16, 52, 74);
+}
+
+.highest-rank{
+    width: 70%;
 }
 
 .game-title{
@@ -153,3 +157,34 @@ img {
     color: white;
 }
 
+#back-card-lol{
+    background: radial-gradient(#e2dae3, #a895ab, #a3a3a3)
+}
+
+#back-card-wr{
+    background: radial-gradient(#0d0c0b, #fa381e, #450b03)
+}
+
+#back-card-kot{
+    background: radial-gradient(#d1d1b6, #fff5a3, #E09756)
+}
+
+#back-card-pubg{
+    background: radial-gradient(#EFCD68, #DEC067, #D7B841)
+}
+
+#back-card-ml{
+    background: radial-gradient(#D081FD, #EED6FC)
+}
+
+#back-card-stardew{
+    background: radial-gradient(#02E677, #00695C)
+}
+
+#kot-character{
+    margin-top: 15px;
+}
+
+#stardrop{
+    width: 80%
+}

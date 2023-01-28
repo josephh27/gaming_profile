@@ -150,7 +150,7 @@ span.greet::before{
     align-items: center;
     background:rgba(170, 197, 242, 0.3);
     top: 600px;
-    left: 45vw;
+    left: 63vw;
     height: 90px;
     padding: 10px;
     border-radius: 10px;
@@ -174,7 +174,7 @@ span.greet::before{
     opacity: 0.7;
 }
 
-.fa-fb{
+.fa-facebook{
     background: #3B5998;
     color: white;
 }
