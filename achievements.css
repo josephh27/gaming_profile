@@ -23,6 +23,7 @@ nav{
         visibility: hidden;
     }   
 }
+
 a {
     text-decoration: none;
     padding: 30px 40px;
@@ -34,4 +35,42 @@ a {
 
 a:hover{
     background: #f2d288;
+}
+
+.achievements-grid{
+    display: grid;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    gap: 1.5rem;
+}
+
+.achievement{
+    display: flex;
+    background-image: linear-gradient(to left, #781010, #a32727, #4d0808);
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.achievement:hover{
+    width: 100%;
+}
+
+.list-item-description{
+    font-size: 2rem;
+    margin-left: 100px;
+}
+
+img{
+    height: 90%;
+}
+#stardrop{
+    margin-top: 20px;
 }
