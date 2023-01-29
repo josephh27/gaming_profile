@@ -43,15 +43,16 @@ a:hover{
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 70%;
     gap: 1.5rem;
 }
 
 .achievement{
     display: flex;
     background-image: linear-gradient(to left, #781010, #a32727, #4d0808);
-    width: 30%;
+    width: 25%;
     height: 200px;
+    padding-left: 20px;
     border-radius: 20px;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
@@ -65,12 +66,18 @@ a:hover{
 
 .list-item-description{
     font-size: 2rem;
-    margin-left: 100px;
+    margin-left: 80px;
 }
+
 
 img{
     height: 90%;
 }
+
+ul li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #stardrop{
     margin-top: 20px;
 }
